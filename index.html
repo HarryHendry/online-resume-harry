@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Resume">
+    <title>Resume</title>
+    <link href="/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--grid set up-->
+    <div class="grid-container">
+<!--image box-->
+        <div class="grid-item one"></div>
+<!--title-->
+        <div class="grid-item two">
+            <h2>Harry Hendry</h2>
+            <hr class="hr">
+            <h4>Full Stack Web Developer</h4>
+        </div>
+        <div class="grid-item three">
+<!--education-->
+            <div class="education">
+            <h3>Education and Certificates</h3>
+            <p>The Complete 2023 Web Development Bootcamp<br>by The App Brewery</p>
+            <p>To Present Day</p>
+            <br>
+            
+            <p>Complete Python Developer in 2023: Zero to Mastery<br>by ZTM</p>
+            <p>To Present Day</p>
+            <br>
+            
+            <p>Full Stack Engineer<br>Codecademy</p>
+            <p>Issued May 2022</p>
+            <br>
+            
+            <p>Level 3: Personal Fitness Trainer<br>by The Training Room</p>
+            <p>Issued April 2011</p>
+            <br>
+            <p>Sports Coaching and the Development of Sport<br>by Northeast College</p>
+            <p>Issued August 2010</p>
+            <hr>
+                </div>
+<!--tech skills-->
+                <div class="tech">
+            <h3>Tech Skills</h3>
+            <p>HTML, CSS, JAVASCRIPT</p>
+            <p>Bootstrap</p>
+            <p>Node.JS, Express.JS, EJS</p>
+            <p>Git, Github</p>
+            <p>APIs, Restful APIs, Public APIs</p>
+            <p>SQL, PostgreSQL, MySQL, MongoDB</p>
+            <p>React</p>
+            <hr>
+            </div>
+<!--soft skills-->
+            <div class="soft">
+            <h3>Soft Skills</h3>
+            <p>Communication</p>
+            <p>Team Player</p>
+            <p>Leadership</p>
+            <p>Problem Solving</p>
+            <p>Adaptibility</p>
+            <p>Customer Service</p>
+            <p>Time Management</p>
+            
+            </div>
+           
+        </div>
+        <div class="grid-item four">
+            <div class="about">
+<!--about me-->
+            <h3>About</h3>
+            <p>Hi, I'm Harry, currently I am a freelance Web Developer based in the United Kingdom. 
+                I love learning new technologies, breaking down problems and building things with my 
+                newfound technical knowledge. I currently work with small businesses to showcase their 
+                work online by building full stack applications. 
+            </p>
+            <hr>
+            </div>
+            <div class="work">
+<!--work experience-->
+            <h3>Work Experience</h3>
+            <p class="space">Freelance Web Developer | Freelance | December 2022 - Present</p>
+                <p>Work with clients to build engaging and efficient Full Stack Web Applications. Technologies 
+            that are used to build may range from PERN Stacks to vanilla HTML, CSS and Javascript. 
+        Some examples of projects I built include an Online Resume, Blog, Plumbing Website, Hair Salon website and Weather App. 
+                </p>
+        <p class="space">Porter | NHS | Dec 2022 - Present</p>
+        <p>As a part of the patient movement team, my responsibility lies in transporting
+                patients safely from Department to Department. An example could be transporting a patient via X-RAY Trolley from A and E Department
+            to the X-Ray Department for their scheduled appointment. The largest aspect of this role involves caring for patients, displaying empathy and 
+            communicating effectively. 
+        </p>
+
+
+            <p class="space">Aircraft Handler and Team Leader | Babcock International | April 2013 - Nov 2021</p>
+            <p>Supervise the ground operations team to safely complete various tasks that align with the 
+            company objectives. Some duties may include supervising towing movements of helicopters, organising hangar parking, arranging de-icing procedures as well as handling third party companies.
+        The role is mainly a health and safety role that includes skilled labour, manual handling and operating machinery. Being able to follow procedure is highly important. </p>
+
+
+            <p class="space">Personal Fitness Trainer | Pure Gym | June 2011 - April 2014</p>
+            <p>This role is mainly focused in customer service, 
+            negotiations and knowledge of health and nutrition. Tasks can range from selling gym memberships, cleaning the gym to delivering tailored personal training sessions.
+        </p>
+            
+            <hr>
+            </div>
+            <div class="hobbies">
+                <h3>Hobbies</h3>
+                <p>Working Out | Social Activities | Gaming | Playing Football | Playing the piano</p>
+                
+            </div>
+            
+        </div>
+<!--footer set up-->
+        <div class="foot">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Email: harryhendry@hotmail.co.uk</p>
+                <p>Phone: 07714 270978</p>
+                <p>Portfolio: hendry.tech</p>
+                </div>
+        </div>
+    </div>
+    <script>
+        // Function to adjust the gap dynamically
+        function adjustGap() {
+            var gridContainer = document.querySelector(".grid-container");
+
+            // Set initial gap value
+            var currentGap = 100;
+
+            // Animate the gap from 30px to 0px over 1 second
+            var intervalId = setInterval(function () {
+                currentGap -= 1;
+                gridContainer.style.gap = currentGap + "px";
+
+                // Stop the animation when the gap reaches 0px
+                if (currentGap <= 0) {
+                    clearInterval(intervalId);
+                }
+            }, 25); 
+        }
+
+        // Call the adjustGap function after the page loads
+        window.onload = adjustGap;
+    </script>
+</body>
+</html>
